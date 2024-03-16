@@ -2,35 +2,39 @@ import React from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
-import photo1 from "../images/photo1.jpg";
-import photo2 from "../images/photo2.jpg";
-import photo3 from "../images/photo3.jpg";
+import photo1 from "../images/Army.jfif";
+import photo2 from "../images/Project.png";
+import photo3 from "../images/certificate.jpeg";
 import photo4 from "../images/photo4.jpg";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Work",
     description:
       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
     imageSrc: photo1,
+    url: "https://github.com",
   },
   {
-    title: "React Infinite Scroll",
+    title: "Projects",
     description:
       "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
     imageSrc: photo2,
+    url: "https://github.com",
   },
   {
-    title: "Photo Gallery",
+    title: "Certifications",
     description:
       "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
     imageSrc: photo3,
+    url: "https://github.com",
   },
   {
-    title: "Event planner",
+    title: "Resume",
     description:
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
     imageSrc: photo4,
+    url: "https://github.com",
   },
 ];
 
@@ -44,7 +48,7 @@ const ProjectsSection = () => {
       spacing={8}
     >
       <Heading as="h1" id="projects-section" alignSelf = "center">
-        Featured Projects
+        Experience
       </Heading>
       
       <Box 
@@ -59,6 +63,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.imageSrc}
+            url = {project.url}
           />
             
          

@@ -9,6 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 
+import projectsSection from "./ProjectsSection";
+
 const socials = [
   {
     icon: faEnvelope,
@@ -16,19 +18,11 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/pmhansen8?tab=projects",
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/patrick-hansen-69477526b/",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
   },
 ];
 
@@ -46,6 +40,7 @@ const Header = () => {
 
   return (
     <Box
+        zIndex={1}
       position="fixed"
       top={0}
       left={0}
@@ -66,11 +61,13 @@ const Header = () => {
         ))}
       </Box>
           <Box as= "nav" display = "flex" >
-           <Box mx ={4}>
-             <a href="#" onClick={handleClick("ProjectsSection")}>Projects</a>
-            </Box >
+            <Box mx={4}>
+
+                <a href="#" onClick={handleClick("projects")}>Projects</a>
+
+            </Box>
             <Box mx ={4}>
-            <a href="#" onClick={handleClick("contact")}>Contact me</a>
+            <a href="#" onClick={handleClick("contactme")}>Contact me</a>
             </Box>
           </Box>
         </HStack>
