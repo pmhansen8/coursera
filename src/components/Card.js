@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import {useState} from "react";
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {experience} from "../Experience.js";
 
 const Card = ({ title, description, imageSrc, url }) => {
 
@@ -26,9 +28,9 @@ const [colors, setcolors] = useState("black")
         <Text color = "black">{description}</Text>
       </VStack>
       <HStack spacing={2} alignSelf="flex-end" >
-        <a href={url} target="_blank" rel="noopener noreferrer"  >
+        <Link to ={url}  >
         <Text  color = {colors} cursor ="pointer"  _hover={{ color: 'blue' }}>  Learn More</Text>
-      </a>
+      </Link>
         <FontAwesomeIcon icon={faArrowRight} />
       </HStack>
     </VStack>

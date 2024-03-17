@@ -6,21 +6,22 @@ import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {Home} from "./Home"
+import {Experience} from "./Experience";
+import {Projects} from "./Projects"
+import {Certifications} from "./Certifications"
 
 function App() {
   return (
-    <ChakraProvider>
-      <AlertProvider>
-        <main>
-          <Header />
-          <LandingSection />
-          <ProjectsSection />
-          <ContactMeSection />
-          <Footer />
-          <Alert />
-        </main>
-      </AlertProvider>
-    </ChakraProvider>
+ <Router>
+   <Routes>
+     <Route path ="/" element={<Home/>}/>
+     <Route path ="/Experience" element={<Experience/>}/>
+       <Route path = "/Projects" element={<Projects/>}/>
+       <Route path = "/Certifications" element={<Certifications/>}/>
+   </Routes>
+ </Router>
   );
 }
 

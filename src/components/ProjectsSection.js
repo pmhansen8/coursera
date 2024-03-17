@@ -6,35 +6,37 @@ import photo1 from "../images/Army.jfif";
 import photo2 from "../images/Project.png";
 import photo3 from "../images/certificate.jpeg";
 import photo4 from "../images/photo4.jpg";
+import {BrowserRouter as router, routes, route, link} from "react-router-dom";
+import {Experience} from "../Experience.js";
 
 const projects = [
   {
     title: "Work",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "Drawing from a diverse background that includes military service and active involvement in extracurricular activities, I possess a wide range of valuable experiences and skills.",
     imageSrc: photo1,
-    url: "https://github.com",
+    url: "/Experience",
   },
   {
     title: "Projects",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "Working on projects allows me to unleash my creativity and demonstrate my ability to bring ideas to life.",
     imageSrc: photo2,
-    url: "https://github.com",
+    url: "/Projects",
   },
   {
     title: "Certifications",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "In my spare time I like to broaden my skill set this includes working on certifications through coursera and other means",
     imageSrc: photo3,
-    url: "https://github.com",
+    url: "/Certifications",
   },
   {
     title: "Resume",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "Explore my resume to gain insights into my comprehensive career journey and professional growth. ",
     imageSrc: photo4,
-    url: "https://github.com",
+    url: "/Experience",
   },
 ];
 
@@ -47,16 +49,16 @@ const ProjectsSection = () => {
       alignItems="flex-start"
       spacing={8}
     >
-      <Heading as="h1" id="projects-section" alignSelf = "center">
+      <Heading as="h1" id="Experience-section" alignSelf = "center">
         Experience
       </Heading>
-      
-      <Box 
+
+      <Box
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
         gridGap={8}
       >
-        
+
         {projects.map((project) => (
            <Card
             key={project.title}
@@ -65,9 +67,9 @@ const ProjectsSection = () => {
             imageSrc={project.imageSrc}
             url = {project.url}
           />
-            
-         
-          
+
+
+
         ))}
       </Box>
     </FullScreenSection>

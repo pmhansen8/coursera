@@ -63,7 +63,7 @@ const Header = () => {
           <Box as= "nav" display = "flex" >
             <Box mx={4}>
 
-                <a href="#" onClick={handleClick("projects")}>Projects</a>
+                <a href="#" onClick={handleClick("Experience")}>Experience</a>
 
             </Box>
             <Box mx ={4}>
