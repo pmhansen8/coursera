@@ -36,7 +36,7 @@ const projects = [
     description:
       "Explore my resume to gain insights into my comprehensive career journey and professional growth. ",
     imageSrc: photo4,
-    url: "/Experience",
+    url: "/Projects",
   },
 ];
 

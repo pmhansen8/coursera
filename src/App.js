@@ -11,6 +11,7 @@ import {Home} from "./Home"
 import {Experience} from "./Experience";
 import {Projects} from "./Projects"
 import {Certifications} from "./Certifications"
+import {Resume} from "./Resume"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
      <Route path ="/Experience" element={<Experience/>}/>
        <Route path = "/Projects" element={<Projects/>}/>
        <Route path = "/Certifications" element={<Certifications/>}/>
+       <Route path = "/Resume" element={<Resume/>}/>
    </Routes>
  </Router>
   );
