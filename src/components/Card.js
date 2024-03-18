@@ -1,6 +1,4 @@
 import {Box, Heading, HStack, Image, Text, VStack} from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import {useState} from "react";
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
@@ -31,7 +29,6 @@ const [colors, setcolors] = useState("black")
         <Link to ={url}  >
         <Text  color = {colors} cursor ="pointer"  _hover={{ color: 'blue' }}>  Learn More</Text>
       </Link>
-        <FontAwesomeIcon icon={faArrowRight} />
       </HStack>
     </VStack>
 
