@@ -1,7 +1,8 @@
 import FullScreenSection from "./components/FullScreenSection";
-import {Box, Heading} from "@chakra-ui/react";
+import {Box, Heading, Text} from "@chakra-ui/react";
 import Card from "./components/Card";
 import React from "react";
+import {Link} from "react-router-dom";
 
 export const Resume = () =>{
     return(
@@ -15,6 +16,10 @@ export const Resume = () =>{
             <Heading as="h1" id="Experience-section" alignSelf = "center">
                 Resume
             </Heading>
+
+            <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
+                <Text fontSize="15" color="black">BACK</Text>
+            </Link>
 
             <Box
                 display="grid"

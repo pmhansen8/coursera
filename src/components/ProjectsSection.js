@@ -5,7 +5,7 @@ import Card from "./Card";
 import photo1 from "../images/Army.jfif";
 import photo2 from "../images/Project.png";
 import photo3 from "../images/certificate.jpeg";
-import photo4 from "../images/photo4.jpg";
+import photo4 from "../images/homer.gif";
 import {BrowserRouter as router, routes, route, link} from "react-router-dom";
 import {Experience} from "../Experience.js";
 
@@ -36,7 +36,7 @@ const projects = [
     description:
       "Explore my resume to gain insights into my comprehensive career journey and professional growth. ",
     imageSrc: photo4,
-    url: "/Projects",
+    url: "https://drive.google.com/file/d/15xoEjUkSj1_MDwNY_bqfAz0mrhmpvUMC/view?usp=sharing",
   },
 ];
 
@@ -71,6 +71,8 @@ const ProjectsSection = () => {
 
 
         ))}
+
+
       </Box>
     </FullScreenSection>
   );
