@@ -17,7 +17,7 @@ const Proj = [
         url: "",
     },
     {
-        title: "Java IDE",
+        title: "Java GUI",
         description:
             "Java GUI that creates randomized gameboard which can open other gameboards or save current gameboard.",
         imageSrc: photo2,
