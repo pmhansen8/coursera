@@ -63,10 +63,7 @@ export const Certifications = () =>{
         <Newheader />
 
 
-        <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
-            <Text fontSize="15" color="black">BACK</Text>
-        </Link>
-
+  
         <Box
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
