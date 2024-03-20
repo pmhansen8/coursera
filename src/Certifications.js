@@ -9,9 +9,12 @@ import Card from "./components/Newcard";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+<<<<<<< HEAD
 import Newheader from "./Newheader";
 import Footer from "./components/Footer";
 
+=======
+>>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
 
 
 
@@ -63,18 +66,28 @@ export const Certifications = () =>{
         <Newheader />
 
 
+        <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
+            <Text fontSize="15" color="black">BACK</Text>
+        </Link>
+
         <Box
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
             gridGap={20}
+<<<<<<< HEAD
             style={{ transform: "translateY(6%)" }}
+=======
+>>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
         >
 
 
 
             {Certs.map((Cert) => (
                 <Card
+<<<<<<< HEAD
 
+=======
+>>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
                     key={Cert.title}
                     title={Cert.title}
                     description={Cert.description}
