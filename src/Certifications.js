@@ -9,12 +9,9 @@ import Card from "./components/Newcard";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-<<<<<<< HEAD
-import Newheader from "./Newheader";
-import Footer from "./components/Footer";
 
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+import Newheader from "./Newheader";
+
 
 
 
@@ -74,20 +71,15 @@ export const Certifications = () =>{
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
             gridGap={20}
-<<<<<<< HEAD
+
             style={{ transform: "translateY(6%)" }}
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+
         >
 
 
 
             {Certs.map((Cert) => (
                 <Card
-<<<<<<< HEAD
-
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
                     key={Cert.title}
                     title={Cert.title}
                     description={Cert.description}
