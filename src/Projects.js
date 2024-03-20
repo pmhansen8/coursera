@@ -43,7 +43,7 @@ export const Projects = () =>{
         p={8}
         alignItems="flex-start"
         spacing={8}
-        style={{ minHeight: '120vh' }}
+        style={{ minHeight: '130vh' }}
     >
 
 
