@@ -12,6 +12,10 @@ import photo3 from "./images/cyber+.png";
 import photo4 from "./images/security+.png";
 
 
+import Newcard from "./components/Newcard";
+import Workheader from "./Workheader";
+
+
 const Ex = [
     {
         title: "Army",
@@ -40,23 +44,21 @@ export const Experience = () =>{
             p={8}
             alignItems="flex-start"
             spacing={8}
+            style={{ minHeight: '110vh'}}
         >
-            <Heading as="h1" id="Experience-section" alignSelf = "center">
-                Work
-            </Heading>
 
-            <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
-                <Text fontSize="15" color="black">BACK</Text>
-            </Link>
+
+         <Workheader/>
 
             <Box
                 display="grid"
                 gridTemplateColumns="repeat(2,minmax(0,1fr))"
                 gridGap={20}
+                style={{ transform: "translateY(11.5%)" }}
             >
 
                 {Ex.map((EXP) => (
-                    <Card
+                    <Newcard
                         key={EXP.title}
                         title={EXP.title}
                         description={EXP.description}

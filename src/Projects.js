@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import photo1 from "./images/robloc.png";
 import photo2 from "./images/Java.png";
 import photo3 from "./images/Project.png";
+import Projectheader from "./Projectheader";
 
 
 const Proj = [
@@ -40,19 +41,17 @@ export const Projects = () =>{
         p={8}
         alignItems="flex-start"
         spacing={8}
+        style={{ minHeight: '120vh' }}
     >
-        <Heading as="h1" id="Experience-section" alignSelf = "center">
-            Projects
-        </Heading>
 
-        <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
-            <Text fontSize="15" color="black">BACK</Text>
-        </Link>
+
+       <Projectheader/>
 
         <Box
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
             gridGap={20}
+            style={{ transform: "translateY(10%)" }}
         >
 
             {Proj.map((proj) => (

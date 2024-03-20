@@ -9,6 +9,9 @@ import Card from "./components/Newcard";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import Newheader from "./Newheader";
+import Footer from "./components/Footer";
+
 
 
 
@@ -52,25 +55,26 @@ export const Certifications = () =>{
         p={8}
         alignItems="flex-start"
         spacing={8}
-    >
-        <Heading as="h1" id="Experience-section" alignSelf = "center">
-            Certifications
-        </Heading>
+        style={{ minHeight: '190vh'}}
 
-        <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
-            <Text fontSize="15" color="black">BACK</Text>
-        </Link>
+    >
+
+
+        <Newheader />
+
 
         <Box
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
             gridGap={20}
+            style={{ transform: "translateY(6%)" }}
         >
 
 
 
             {Certs.map((Cert) => (
                 <Card
+
                     key={Cert.title}
                     title={Cert.title}
                     description={Cert.description}
@@ -87,6 +91,8 @@ export const Certifications = () =>{
 
 
         </Box>
+
+
     </FullScreenSection>
     );
 }
