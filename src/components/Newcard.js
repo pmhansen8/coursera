@@ -19,7 +19,7 @@ const Card = ({ title, description, imageSrc, url }) => {
             spacing={4}
             maxW="300px"
         >
-            <Image color = "black" src={imageSrc} alt={title} borderRadius="md" maxWidth= "300px" maxHeight="280px"/>
+            <Image color = "black" src={imageSrc} alt={title} borderRadius="md" maxWidth= "100%" maxHeight="280px"/>
             <VStack spacing={2} alignItems="flex-start">
                 <Heading as="h3" size="md" color = "black">
                     {title}
