@@ -6,10 +6,9 @@ import {Link} from "react-router-dom";
 import photo1 from "./images/robloc.png";
 import photo2 from "./images/Java.png";
 import photo3 from "./images/Project.png";
-<<<<<<< HEAD
+
 import Projectheader from "./Projectheader";
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+
 
 
 const Proj = [
@@ -58,10 +57,10 @@ export const Projects = () =>{
             display="grid"
             gridTemplateColumns="repeat(2,minmax(0,1fr))"
             gridGap={20}
-<<<<<<< HEAD
+
             style={{ transform: "translateY(10%)" }}
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+
+
         >
 
             {Proj.map((proj) => (
