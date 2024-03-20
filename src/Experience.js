@@ -12,13 +12,11 @@ import photo3 from "./images/cyber+.png";
 import photo4 from "./images/security+.png";
 
 
-<<<<<<< HEAD
 import Newcard from "./components/Newcard";
 import Workheader from "./Workheader";
 
 
-=======
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+
 const Ex = [
     {
         title: "Army",
@@ -39,21 +37,21 @@ const Ex = [
 
 ]
 
-export const Experience = () =>{
-    return(
+export const Experience = () => {
+    return (
         <FullScreenSection
             backgroundColor="#14532d"
             isDarkBackground
             p={8}
             alignItems="flex-start"
             spacing={8}
-            style={{ minHeight: '110vh'}}
+            style={{minHeight: '110vh'}}
         >
 
 
-         <Workheader/>
+            <Workheader/>
 
-            <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0,  zIndex: 1}}>
+            <Link to="/" style={{position: 'absolute', transform: 'translate(-400px)', margin: 0, zIndex: 1}}>
                 <Text fontSize="15" color="black">BACK</Text>
             </Link>
 
@@ -61,29 +59,26 @@ export const Experience = () =>{
                 display="grid"
                 gridTemplateColumns="repeat(2,minmax(0,1fr))"
                 gridGap={20}
-<<<<<<< HEAD
-                style={{ transform: "translateY(11.5%)" }}
+
+                style={{transform: "translateY(11.5%)"}}
             >
 
-                {Ex.map((EXP) => (
-                    <Newcard
-=======
-            >
 
                 {Ex.map((EXP) => (
                     <Card
->>>>>>> 075938b3ce6092c149dfd1fa65c3e6c616e91c3e
+
                         key={EXP.title}
                         title={EXP.title}
                         description={EXP.description}
                         imageSrc={EXP.imageSrc}
-                        url = {EXP.url}
+                        url={EXP.url}
                     />
                 ))}
 
             </Box>
         </FullScreenSection>
     )
+
 }
 
 
