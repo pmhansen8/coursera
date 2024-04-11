@@ -36,7 +36,7 @@ const projects = [
     description:
       "Explore my resume to gain insights into my comprehensive career journey and professional growth. ",
     imageSrc: photo4,
-    url: "https://drive.google.com/file/d/1NaZg86cy1rDOaC4BnS2hcARjkncWIcgx/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1rvRWnzOF1Z0U-ES6iEneAwySAlGl3Kia/view?usp=sharing",
   },
 ];
 
