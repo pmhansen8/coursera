@@ -14,6 +14,7 @@ import {Certifications} from "./Certifications"
 import {Resume} from "./Resume"
 
 function App() {
+  document.title = "Portfolio"
   return (
  <Router>
    <Routes>
