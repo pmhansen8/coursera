@@ -29,7 +29,7 @@ const Proj = [
     {
         title: "Website",
         description:
-            "Created fully functioning website through coursera course for restaurants.",
+            "Created fully functioning website through coursera course for restaurant.",
         imageSrc: photo3,
         url: "https://github.com/pmhansen8/react-project",
     },
