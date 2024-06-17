@@ -15,6 +15,7 @@ import {Resume} from "./Resume"
 
 function App() {
   document.title = "Portfolio"
+  document.label = "hello"
   return (
  <Router>
    <Routes>
